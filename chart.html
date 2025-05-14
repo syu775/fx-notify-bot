@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>チャート監視画面</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #f0f0f0;
+    }
+    .chart-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .chart-frame {
+      width: 420px;
+      height: 380px;
+      background: white;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .pair-label {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h2 style="text-align:center; margin-top:20px;">監視中チャート一覧（5分足）</h2>
+  <div class="chart-grid">
+    <div>
+      <div class="pair-label">USD/JPY</div>
+      <iframe class="chart-frame" src="https://fx.minkabu.jp/pair/USDJPY" data-symbol="USDJPY"></iframe>
+    </div>
+    <div>
+      <div class="pair-label">EUR/JPY</div>
+      <iframe class="chart-frame" src="https://fx.minkabu.jp/pair/EURJPY" data-symbol="EURJPY"></iframe>
+    </div>
+    <div>
+      <div class="pair-label">GBP/JPY</div>
+      <iframe class="chart-frame" src="https://fx.minkabu.jp/pair/GBPJPY" data-symbol="GBPJPY"></iframe>
+    </div>
+    <div>
+      <div class="pair-label">EUR/USD</div>
+      <iframe class="chart-frame" src="https://fx.minkabu.jp/pair/EURUSD" data-symbol="EURUSD"></iframe>
+    </div>
+    <div>
+      <div class="pair-label">NZD/JPY</div>
+      <iframe class="chart-frame" src="https://fx.minkabu.jp/pair/NZDJPY" data-symbol="NZDJPY"></iframe>
+    </div>
+    <div>
+      <div class="pair-label">AUD/JPY</div>
+      <iframe class="chart-frame" src="https://fx.minkabu.jp/pair/AUDJPY" data-symbol="AUDJPY"></iframe>
+    </div>
+    <div>
+      <div class="pair-label">AUD/USD</div>
+      <iframe class="chart-frame" src="https://fx.minkabu.jp/pair/AUDUSD" data-symbol="AUDUSD"></iframe>
+    </div>
+  </div>
+</body>
+</html>
