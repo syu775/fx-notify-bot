@@ -1,12 +1,12 @@
 {
-  "name": "fx-notify-bot",
+  "name": "fx-notify-server",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "dependencies": {
-    "axios": "^1.6.7",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "axios": "^1.6.8"
   }
 }
